@@ -8,7 +8,7 @@ $this->title = 'My Yii Application';
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4">Поздравляю!</h1>
-
+<Br/>
         <p class="lead">Меня зовут Сергей Бакланов, я делаю всякие интернет сервисы, штуки и сайты.</p>
         <p class="lead">Мой сайт <a href="https://php-cat.com"
                                     class="text-blue-500 underline"
@@ -18,9 +18,9 @@ $this->title = 'My Yii Application';
     </div>
 
 <div class=" container">
-    <div class="flex flex-row w-[600px] mx-auto shadow-lg rounded p-3 border-2 border-orange-300">
+    <div class="flex flex-row w-[600px] mx-auto shadow-lg rounded p-3 border-2 border-orange-300 bg-white">
         <div class="w-[350px]">
-            <p>Сайт создан для отработки навыков работы с YII сайтами</p>
+            <p>Сайт создан для отработки навыков работы с YII2 сайтами</p>
             <p>работа с навигацией страницами</p>
             <p>работа с бд</p>
             <p>показ формочки и её обработка</p>

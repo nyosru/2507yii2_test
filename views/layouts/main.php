@@ -26,7 +26,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100
+bg-gradient-to-bl from-blue-200 via-purple-200 to-pink-200
+
+">
 <?php $this->beginBody() ?>
 
 <header id="header">
