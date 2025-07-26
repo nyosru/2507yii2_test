@@ -12,30 +12,39 @@ $this->title = 'Php-cat.com / test dev Yii2 ';
         <Br/>
         <p>Сайт создан для отработки навыков работы с технологией создания сайтов YII2</p>
         <p>Работа с: навигацией, страницами, бд, формочки, обработка форм, и интеграция АПИ</p>
-        <p>GIT роепозиторий с кодом: <a class="btn btn-lg btn-success"
+        <p>GIT репозиторий этого сайта: <a class="btn btn-lg btn-success"
                                         target="_blank"
                                         href="https://github.com/nyosru/2507yii2_test">https://github.com/nyosru/2507yii2_test</a>
         </p>
     </div>
 
     <div class="container">
-        <div class="flex flex-row w-[600px] mx-auto shadow-lg rounded p-3 border-2 border-orange-300 bg-white">
-            <div class="w-[350px]">
+
+        <div class="flex flex-col sm:flex-row sm:w-[600px] sm:mx-auto shadow-lg rounded p-3 border-2 border-orange-300 bg-white">
+
+            <div class="w-full sm:w-[350px]">
                 <p class="lead">Меня зовут Сергей Бакланов, я&nbsp;делаю интернет сервисы, штуки, АПИ связки, ИИ и&nbsp;сайты.</p>
                 <p class="lead">Мой сайт <a href="https://php-cat.com"
                                             class="text-blue-500 underline"
                                             target="_blank">php-cat.com</a></p>
             </div>
-            <div class="w-[250px]">
-                <img src="/img/kosmo2.jpeg" alt=""/>
+
+            <div class="w-full sm:w-[250px]">
+                <a href="https://php-cat.com"
+                   class="text-blue-500 underline"
+                   target="_blank">
+                <img
+                        src="/img/kosmo2.jpeg"
+                     class="mx-auto w-[150px] sm:w-[250px]"
+                     alt=""/>
+                    </a>
             </div>
+
         </div>
 
         <div class="text-center my-3">
-
             Технологии этого проекта:
             Yii2, Tailwind CSS, MySql
-
         </div>
 
     </div>

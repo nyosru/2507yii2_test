@@ -102,7 +102,16 @@ bg-gradient-to-r from-blue-200 via-red-300 to-orange-300
     <div class="flex flex-col sm:flex-row">
         <div class="w-full sm:w-1/3 text-center ">&copy; My Company <?= date('Y') ?></div>
         <div class="w-full sm:w-1/3 text-center"><?= Yii::powered() ?></div>
-        <div class="w-full sm:w-1/3 text-center ">создание сайта: <a href="https://php-cat.com">php-cat.com</a></div>
+        <div class="w-full sm:w-1/3 text-center ">создание сайта:             <a href="https://php-cat.com"
+                                                                                 class="text-blue-500 underline"
+                                                                                 target="_blank">
+                <img
+                        xxsrc="/img/kosmo2.jpeg"
+                        src="https://php-cat.com/phpcat/cat.png"
+                        class="inline w-[50px]"
+                        alt=""/>
+            </a>
+            <a href="https://php-cat.com">php-cat.com</a></div>
     </div>
 </footer>
 
