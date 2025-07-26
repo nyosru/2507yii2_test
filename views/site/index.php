@@ -2,35 +2,43 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'Php-cat.com / test dev Yii2 ';
+
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Поздравляю!</h1>
-<Br/>
-        <p class="lead">Меня зовут Сергей Бакланов, я делаю всякие интернет сервисы, штуки и сайты.</p>
-        <p class="lead">Мой сайт <a href="https://php-cat.com"
-                                    class="text-blue-500 underline"
-                                    target="_blank" >php-cat.com</a></p>
-
-<!--        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>-->
+        <h1 class="display-4">Тест драйв проект Yii2 ... что же это</h1>
+        <Br/>
+        <p>Сайт создан для отработки навыков работы с технологией создания сайтов YII2</p>
+        <p>Работа с: навигацией, страницами, бд, формочки, обработка форм, и интеграция АПИ</p>
+        <p>GIT роепозиторий с кодом: <a class="btn btn-lg btn-success"
+                                        target="_blank"
+                                        href="https://github.com/nyosru/2507yii2_test">https://github.com/nyosru/2507yii2_test</a>
+        </p>
     </div>
 
-<div class=" container">
-    <div class="flex flex-row w-[600px] mx-auto shadow-lg rounded p-3 border-2 border-orange-300 bg-white">
-        <div class="w-[350px]">
-            <p>Сайт создан для отработки навыков работы с YII2 сайтами</p>
-            <p>работа с навигацией страницами</p>
-            <p>работа с бд</p>
-            <p>показ формочки и её обработка</p>
-            <p>интеграция АПИ других служб</p>
+    <div class="container">
+        <div class="flex flex-row w-[600px] mx-auto shadow-lg rounded p-3 border-2 border-orange-300 bg-white">
+            <div class="w-[350px]">
+                <p class="lead">Меня зовут Сергей Бакланов, я&nbsp;делаю интернет сервисы, штуки, АПИ связки, ИИ и&nbsp;сайты.</p>
+                <p class="lead">Мой сайт <a href="https://php-cat.com"
+                                            class="text-blue-500 underline"
+                                            target="_blank">php-cat.com</a></p>
+            </div>
+            <div class="w-[250px]">
+                <img src="/img/kosmo2.jpeg" alt=""/>
+            </div>
         </div>
-        <div class="w-[250px]">
-            <img src="/img/kosmo2.jpeg" alt=""/>
+
+        <div class="text-center my-3">
+
+            Технологии этого проекта:
+            Yii2, Tailwind CSS, MySql
+
         </div>
+
     </div>
-</div>
     <div class="hidden body-content">
 
         <div class="row">

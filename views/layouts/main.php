@@ -1,6 +1,7 @@
 <?php
 
 /** @var yii\web\View $this */
+
 /** @var string $content */
 
 use app\assets\AppAsset;
@@ -22,13 +23,36 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
+
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-</head>
-<body class="d-flex flex-column h-100
-bg-gradient-to-bl from-blue-200 via-purple-200 to-pink-200
 
+
+    <style>
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body.animated-gradient {
+            animation: gradientShift 30s ease infinite;
+            background-size: 400% 400%;
+        }
+    </style>
+
+</head>
+<!--bg-gradient-to-b from-blue-700 to-red-500-->
+<body class="d-flex flex-column h-100
+animated-gradient
+bg-gradient-to-r from-blue-200 via-red-300 to-orange-300
 ">
 <?php $this->beginBody() ?>
 
@@ -42,27 +66,30 @@ bg-gradient-to-bl from-blue-200 via-purple-200 to-pink-200
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+
+            ['label' => 'Стартовая', 'url' => ['/site/index']],
+            ['label' => 'О проекте', 'url' => ['/site/about']],
+            ['label' => 'Контакты', 'url' => ['/site/contact']],
+
             Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
+                ? ['label' => 'Логин', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
+                . Html::beginForm(['/site/logout'])
+                . Html::submitButton(
+                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    ['class' => 'nav-link btn btn-link logout']
+                )
+                . Html::endForm()
+                . '</li>'
+
         ]
     ]);
     NavBar::end();
     ?>
 </header>
 
-<main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
+<main id="main" role="main">
+    <div class="container pt-[80px]">
         <?php if (!empty($this->params['breadcrumbs'])): ?>
             <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
         <?php endif ?>
@@ -73,9 +100,9 @@ bg-gradient-to-bl from-blue-200 via-purple-200 to-pink-200
 
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="flex flex-col sm:flex-row">
-            <div class="w-full sm:w-1/3 text-center ">&copy; My Company <?= date('Y') ?></div>
-            <div class="w-full sm:w-1/3 text-center"><?= Yii::powered() ?></div>
-            <div class="w-full sm:w-1/3 text-center ">создание сайта: <a href="https://php-cat.com">php-cat.com</a></div>
+        <div class="w-full sm:w-1/3 text-center ">&copy; My Company <?= date('Y') ?></div>
+        <div class="w-full sm:w-1/3 text-center"><?= Yii::powered() ?></div>
+        <div class="w-full sm:w-1/3 text-center ">создание сайта: <a href="https://php-cat.com">php-cat.com</a></div>
     </div>
 </footer>
 
