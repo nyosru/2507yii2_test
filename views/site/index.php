@@ -47,6 +47,11 @@ $this->title = 'Php-cat.com / test dev Yii2 ';
             Yii2, Tailwind CSS, MySql
         </div>
 
+        <div class="text-center my-3">
+            <b>Доделки:</b>
+            вынес секреты (доступ к бд) в .env файл, чтобы в репозитории не хранить секреты
+        </div>
+
     </div>
     <div class="hidden body-content">
 
